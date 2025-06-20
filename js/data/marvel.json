@@ -1,0 +1,71 @@
+{
+  "title": "Quel·le héros·ïne Marvel es-tu ?",
+  "description": "Découvre quel personnage de l'univers Marvel te correspond le plus selon ta personnalité !",
+  "image": "./img/marvel.png",
+  "questions_count": 5,
+  "questions": [
+    {
+      "question": "Quel est ton plus grand atout ?",
+      "answers": [
+        { "text": "Ma force intérieure", "profile": "Captain Marvel" },
+        { "text": "Mon intelligence", "profile": "Iron Man" },
+        { "text": "Mon agilité", "profile": "Spider-Man" },
+        { "text": "Ma ruse", "profile": "Black Widow" }
+      ]
+    },
+    {
+      "question": "Comment réagis-tu face au danger ?",
+      "answers": [
+        { "text": "Je fonce tête baissée", "profile": "Captain Marvel" },
+        { "text": "Je planifie une riposte", "profile": "Iron Man" },
+        { "text": "Je me fie à mon instinct", "profile": "Spider-Man" },
+        { "text": "Je reste dans l’ombre", "profile": "Black Widow" }
+      ]
+    },
+    {
+      "question": "Que préfères-tu faire pendant ton temps libre ?",
+      "answers": [
+        { "text": "Explorer l’univers", "profile": "Captain Marvel" },
+        { "text": "Inventer des gadgets", "profile": "Iron Man" },
+        { "text": "Aider les autres", "profile": "Spider-Man" },
+        { "text": "M'entraîner ou enquêter", "profile": "Black Widow" }
+      ]
+    },
+    {
+      "question": "Quel est ton point faible ?",
+      "answers": [
+        { "text": "Trop sûre de moi", "profile": "Captain Marvel" },
+        { "text": "L'ego", "profile": "Iron Man" },
+        { "text": "Le doute", "profile": "Spider-Man" },
+        { "text": "La solitude", "profile": "Black Widow" }
+      ]
+    },
+    {
+      "question": "Que valorises-tu le plus ?",
+      "answers": [
+        { "text": "La justice", "profile": "Captain Marvel" },
+        { "text": "L’innovation", "profile": "Iron Man" },
+        { "text": "La responsabilité", "profile": "Spider-Man" },
+        { "text": "La loyauté", "profile": "Black Widow" }
+      ]
+    }
+  ],
+  "results": {
+    "Captain Marvel": {
+      "title": "Tu es Captain Marvel",
+      "description": "Puissant·e, déterminé·e et téméraire, tu n’as peur de rien et tu défends ce qui est juste dans toutes les galaxies."
+    },
+    "Iron Man": {
+      "title": "Tu es Iron Man",
+      "description": "Ingénieux·se, brillant·e et charismatique, tu fais face aux défis avec technologie et audace, même si ton ego te joue parfois des tours."
+    },
+    "Spider-Man": {
+      "title": "Tu es Spider-Man",
+      "description": "Généreux·se, loyal·e et plein·e de doutes, tu apprends chaque jour à porter le poids de tes responsabilités avec courage."
+    },
+    "Black Widow": {
+      "title": "Tu es Black Widow",
+      "description": "Calme, stratégique et redoutable, tu choisis tes batailles avec soin et protèges ceux que tu aimes depuis les coulisses."
+    }
+  }
+}

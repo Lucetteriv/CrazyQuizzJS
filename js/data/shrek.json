@@ -1,0 +1,75 @@
+{
+  "title": "Quel personnage de Shrek es-tu ?",
+  "description": "Découvre quel personnage de l'univers de Shrek te correspond le plus selon ta personnalité !",
+  "image": "./img/shrek.png",
+  "questions_count": 5,
+  "questions": [
+    {
+      "text": "Quel est ton meilleur trait de caractère ?",
+      "answers": [
+        { "text": "La loyauté", "value": "donkey" },
+        { "text": "La force tranquille", "value": "shrek" },
+        { "text": "La ruse", "value": "puss" },
+        { "text": "La douceur", "value": "fiona" }
+      ]
+    },
+    {
+      "text": "Quel est ton plat préféré ?",
+      "answers": [
+        { "text": "Des gaufres bien grasses", "value": "donkey" },
+        { "text": "Un ragoût maison", "value": "shrek" },
+        { "text": "Des tapas raffinés", "value": "puss" },
+        { "text": "Un repas équilibré", "value": "fiona" }
+      ]
+    },
+    {
+      "text": "Où aimerais-tu vivre ?",
+      "answers": [
+        { "text": "Dans une cabane isolée", "value": "shrek" },
+        { "text": "Dans un château", "value": "fiona" },
+        { "text": "Dans une auberge animée", "value": "donkey" },
+        { "text": "Dans une ruelle mystérieuse", "value": "puss" }
+      ]
+    },
+    {
+      "text": "Quel animal te représente le plus ?",
+      "answers": [
+        { "text": "L’âne", "value": "donkey" },
+        { "text": "L’ours", "value": "shrek" },
+        { "text": "Le chat", "value": "puss" },
+        { "text": "La biche", "value": "fiona" }
+      ]
+    },
+    {
+      "text": "Ta plus grande force ?",
+      "answers": [
+        { "text": "Faire rire les autres", "value": "donkey" },
+        { "text": "Être moi-même sans compromis", "value": "shrek" },
+        { "text": "Charmer et surprendre", "value": "puss" },
+        { "text": "Être là pour ceux que j’aime", "value": "fiona" }
+      ]
+    }
+  ],
+  "results": {
+    "shrek": {
+      "title": "Tu es Shrek",
+      "desc": "Tu es brut au premier abord, mais terriblement loyal et attachant. Tu ne fais confiance qu'à ceux qui le méritent.",
+      "img": "https://example.com/images/shrek.png"
+    },
+    "fiona": {
+      "title": "Tu es Fiona",
+      "desc": "Tu es douce, courageuse et pleine de ressources. Tu caches une force incroyable derrière ton apparente délicatesse.",
+      "img": "https://example.com/images/fiona.png"
+    },
+    "donkey": {
+      "title": "Tu es Donkey",
+      "desc": "Tu es l’ami fidèle, joyeux, un peu envahissant mais toujours là pour les autres. Ton humour est ta plus grande arme.",
+      "img": "https://example.com/images/donkey.png"
+    },
+    "puss": {
+      "title": "Tu es Le Chat Potté",
+      "desc": "Tu es malin, élégant et tu as le chic pour charmer ton entourage. Derrière tes airs, tu es un vrai héros.",
+      "img": "https://example.com/images/puss.png"
+    }
+  }
+}

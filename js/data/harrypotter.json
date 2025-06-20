@@ -1,0 +1,71 @@
+{
+  "title": "Quelle maison de Poudlard te correspond ?",
+  "description": "Découvre quel personnage de l'univers Harry Potter te correspond le plus selon ta personnalité !",
+  "image": "./img/hp.png",
+  "questions_count": 5,
+  "questions": [
+    {
+      "question": "Quel trait de caractère te définit le mieux ?",
+      "answers": [
+        { "text": "Le courage", "profile": "Gryffondor" },
+        { "text": "L’intelligence", "profile": "Serdaigle" },
+        { "text": "La loyauté", "profile": "Poufsouffle" },
+        { "text": "L’ambition", "profile": "Serpentard" }
+      ]
+    },
+    {
+      "question": "Quel est ton endroit préféré à Poudlard ?",
+      "answers": [
+        { "text": "La salle commune de Gryffondor", "profile": "Gryffondor" },
+        { "text": "La bibliothèque", "profile": "Serdaigle" },
+        { "text": "Les cuisines", "profile": "Poufsouffle" },
+        { "text": "Les cachots", "profile": "Serpentard" }
+      ]
+    },
+    {
+      "question": "Comment réagis-tu face à un défi ?",
+      "answers": [
+        { "text": "Je le relève sans hésiter", "profile": "Gryffondor" },
+        { "text": "Je réfléchis à la meilleure solution", "profile": "Serdaigle" },
+        { "text": "Je demande de l’aide si besoin", "profile": "Poufsouffle" },
+        { "text": "Je trouve un moyen de le contourner", "profile": "Serpentard" }
+      ]
+    },
+    {
+      "question": "Quel animal de compagnie choisirais-tu ?",
+      "answers": [
+        { "text": "Un lion", "profile": "Gryffondor" },
+        { "text": "Un aigle", "profile": "Serdaigle" },
+        { "text": "Un blaireau", "profile": "Poufsouffle" },
+        { "text": "Un serpent", "profile": "Serpentard" }
+      ]
+    },
+    {
+      "question": "Quelle devise te parle le plus ?",
+      "answers": [
+        { "text": "Faire ce qui est juste, quoi qu’il en coûte", "profile": "Gryffondor" },
+        { "text": "La connaissance est la plus grande des richesses", "profile": "Serdaigle" },
+        { "text": "Travail et patience mènent loin", "profile": "Poufsouffle" },
+        { "text": "La fin justifie les moyens", "profile": "Serpentard" }
+      ]
+    }
+  ],
+  "results": {
+    "Gryffondor": {
+      "title": "Tu es un Gryffondor",
+      "description": "Brave, audacieux·se et déterminé·e, tu n’hésites jamais à défendre ce qui est juste, même si c’est dangereux."
+    },
+    "Serdaigle": {
+      "title": "Tu es un·e Serdaigle",
+      "description": "Curieux·se, créatif·ve et sage, tu cherches toujours à comprendre le monde qui t’entoure avec logique et esprit."
+    },
+    "Poufsouffle": {
+      "title": "Tu es un·e Poufsouffle",
+      "description": "Fidèle, gentil·le et travailleur·se, tu valorises l’amitié, la loyauté et l’effort plus que tout."
+    },
+    "Serpentard": {
+      "title": "Tu es un·e Serpentard",
+      "description": "Ambitieux·se, rusé·e et charismatique, tu n’as pas peur d’emprunter des chemins complexes pour atteindre tes buts."
+    }
+  }
+}

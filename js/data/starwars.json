@@ -1,0 +1,71 @@
+{
+  "title": "Quel personnage de Star Wars es-tu ?",
+  "description": "Découvre quel personnage de l'univers de Star Wars te correspond le plus selon ta personnalité !",
+  "image": "./img/starwars.png",
+  "questions_count": 5,
+  "questions": [
+    {
+      "question": "Quel serait ton rôle dans la galaxie ?",
+      "answers": [
+        { "text": "Protéger les innocents", "profile": "Jedi" },
+        { "text": "Prendre le pouvoir", "profile": "Sith" },
+        { "text": "Combattre pour la liberté", "profile": "Rebelle" },
+        { "text": "Travailler pour moi-même", "profile": "Chasseur de primes" }
+      ]
+    },
+    {
+      "question": "Quelle est ton arme de prédilection ?",
+      "answers": [
+        { "text": "Sabre laser bleu", "profile": "Jedi" },
+        { "text": "Sabre laser rouge", "profile": "Sith" },
+        { "text": "Blaster", "profile": "Rebelle" },
+        { "text": "Fusil à impulsion", "profile": "Chasseur de primes" }
+      ]
+    },
+    {
+      "question": "Quel mot te décrit le mieux ?",
+      "answers": [
+        { "text": "Sage", "profile": "Jedi" },
+        { "text": "Ambitieux", "profile": "Sith" },
+        { "text": "Courageux", "profile": "Rebelle" },
+        { "text": "Indépendant", "profile": "Chasseur de primes" }
+      ]
+    },
+    {
+      "question": "Quelle planète préfères-tu ?",
+      "answers": [
+        { "text": "Coruscant", "profile": "Jedi" },
+        { "text": "Mustafar", "profile": "Sith" },
+        { "text": "Yavin 4", "profile": "Rebelle" },
+        { "text": "Tatooine", "profile": "Chasseur de primes" }
+      ]
+    },
+    {
+      "question": "Quel est ton plus grand atout ?",
+      "answers": [
+        { "text": "La maîtrise de la Force", "profile": "Jedi" },
+        { "text": "La détermination", "profile": "Sith" },
+        { "text": "L’esprit d’équipe", "profile": "Rebelle" },
+        { "text": "La débrouillardise", "profile": "Chasseur de primes" }
+      ]
+    }
+  ],
+  "results": {
+    "Jedi": {
+      "title": "Tu es un Jedi",
+      "description": "Calme, réfléchi·e et puissant·e, tu utilises la Force pour faire le bien dans la galaxie."
+    },
+    "Sith": {
+      "title": "Tu es un Sith",
+      "description": "Ambitieux·se et déterminé·e, tu poursuis la puissance sans crainte."
+    },
+    "Rebelle": {
+      "title": "Tu es un Rebelle",
+      "description": "Tu luttes pour la justice et la liberté, même face à l’oppression."
+    },
+    "Chasseur de primes": {
+      "title": "Tu es un Chasseur de primes",
+      "description": "Tu travailles seul·e, guidé·e par ton propre code et ta liberté."
+    }
+  }
+}
