@@ -1,5 +1,6 @@
-export function startQuizz(quizzID){
-    quizzID = 1;
+import { loadAllQuizzes } from "../QuizLoader.js";
+
+export function startQuizz() {
     document.querySelectorAll('.card').forEach(card => {
         card.classList.add('d-none');
     });
@@ -13,16 +14,18 @@ export function startQuizz(quizzID){
         answer.classList.remove('d-none');
         answer.classList.add('d-flex');
     });
-    console.log("Quizz started with ID:", quizzID);
 }
 
 export function endQuizz(){
-    document.querySelector('.container game-view').classList.remove('d-block');
-    document.querySelector('.container game-view').classList.add('d-none');
-    document.querySelectorAll('.card').forEach(card => {
-        card.classList.remove('d-none');
-        card.classList.add('d-block');
-    });
+    document.querySelector('.container.game-view').classList.remove('d-block');
+    document.querySelector('.container.game-view').classList.add('d-none');
+    document.querySelector('.container.result-view').classList.remove('d-none');
+    document.querySelector('.container.result-view').classList.add('d-block');
     console.log("Quizz ended");
+}
+
+export async function getQuizz(index) {
+    const quizzes = await loadAllQuizzes();
+    return quizzes[index];
 }
 

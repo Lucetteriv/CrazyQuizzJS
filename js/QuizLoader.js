@@ -32,28 +32,29 @@ export async function loadAllQuizzes() {
 
 export async function afficherCartesQuizz(quizzes) {
   try {
-    const container = document.getElementById('quiz-container');
+    const container = document.querySelector('.main-card');
+    if (!container) {
+      console.error("Le conteneur avec l'id 'quiz-container' est introuvable dans le DOM.");
+      return;
+    }
     container.innerHTML = ''; // Nettoie le conteneur
 
     quizzes.forEach((quiz, index) => {
-      // === Structure Bootstrap : Colonne contenant la carte ===
-      const col = document.createElement('div');
-      col.classList.add('col-xs-12', 'col-md-6', 'col-lg-3', 'd-flex', 'justify-content-center');
 
       // === Carte principale ===
       const card = document.createElement('div');
-      card.classList.add('card');
+      card.classList.add('card', 'px-0', 'col-xs-12', 'col-md-6', 'col-lg-3');
       card.style.width = '18rem';
       card.dataset.index = index;
 
       // === Image ===
       const img = document.createElement('img');
-      img.classList.add('card-img-top');
+      img.classList.add('card-img-top', 'h-100', 'object-fit-cover');
       img.src = quiz.image || 'https://via.placeholder.com/286x180?text=Quizz'; // Image par défaut
       img.alt = quiz.title || 'Image du quizz';
       card.appendChild(img);
 
-      // === Body ===
+      // === card-body ===
       const cardBody = document.createElement('div');
       cardBody.classList.add('card-body');
 
@@ -68,27 +69,44 @@ export async function afficherCartesQuizz(quizzes) {
       desc.textContent = quiz.description || "Pas de description disponible.";
 
       // === Bouton ===
-      const startButton = document.createElement('a');
-      startButton.classList.add('btn', 'btn-primary');
+      const startButton = document.createElement('button');
+      startButton.classList.add('btn', 'btn-primary', 'quiz-button');
       startButton.textContent = "Répondre au quizz";
-      startButton.href = `quiz.html?id=${quiz.id || index}`; // lien vers la page de quiz
-      // OU utiliser un bouton et une fonction JS si besoin : startButton.addEventListener('click', ...)
 
-      // Ajoute les éléments au body
+      // Ajoute les éléments à card-body
       cardBody.appendChild(title);
       cardBody.appendChild(desc);
       cardBody.appendChild(startButton);
 
-      // Ajoute body à la carte
+      // Ajoute card-body à la carte
       card.appendChild(cardBody);
 
-      // Ajoute la carte dans la colonne, puis au conteneur
-      col.appendChild(card);
-      container.appendChild(col);
+      // Ajoute la carte complète au conteneur
+      container.appendChild(card);
     });
 
   } catch (error) {
     console.error("Erreur lors du chargement des quiz :", error);
   }
 }
+
+export function showQuestions(quiz, currentQuestion) {
+  const questionContainer = document.querySelector('.question');
+  const answersContainer = document.querySelectorAll('.answer-btn');
+
+  const questions = quiz.questions;
+
+  questionContainer.textContent = questions[currentQuestion].question || "Question inconnue";
+  answersContainer.forEach((answer, index) => {
+    answer.textContent = questions[currentQuestion].answers[index].text || `Réponse ${index + 1} inconnue`;
+    answer.setAttribute('id', questions[currentQuestion].answers[index].profile || `profile-${index + 1}`);
+  });
+}
+
+export function nextQuestion(currentQuestion) {
+  currentQuestion++;
+  return currentQuestion;
+};
+
+
 

@@ -5,48 +5,48 @@
   "questions_count": 5,
   "questions": [
     {
-      "text": "Quel est ton meilleur trait de caractère ?",
+      "question": "Quel est ton meilleur trait de caractère ?",
       "answers": [
-        { "text": "La loyauté", "value": "donkey" },
-        { "text": "La force tranquille", "value": "shrek" },
-        { "text": "La ruse", "value": "puss" },
-        { "text": "La douceur", "value": "fiona" }
+        { "text": "La loyauté", "profile": "donkey" },
+        { "text": "La force tranquille", "profile": "shrek" },
+        { "text": "La ruse", "profile": "puss" },
+        { "text": "La douceur", "profile": "fiona" }
       ]
     },
     {
-      "text": "Quel est ton plat préféré ?",
+      "question": "Quel est ton plat préféré ?",
       "answers": [
-        { "text": "Des gaufres bien grasses", "value": "donkey" },
-        { "text": "Un ragoût maison", "value": "shrek" },
-        { "text": "Des tapas raffinés", "value": "puss" },
-        { "text": "Un repas équilibré", "value": "fiona" }
+        { "text": "Des gaufres bien grasses", "profile": "donkey" },
+        { "text": "Un ragoût maison", "profile": "shrek" },
+        { "text": "Des tapas raffinés", "profile": "puss" },
+        { "text": "Un repas équilibré", "profile": "fiona" }
       ]
     },
     {
-      "text": "Où aimerais-tu vivre ?",
+      "question": "Où aimerais-tu vivre ?",
       "answers": [
-        { "text": "Dans une cabane isolée", "value": "shrek" },
-        { "text": "Dans un château", "value": "fiona" },
-        { "text": "Dans une auberge animée", "value": "donkey" },
-        { "text": "Dans une ruelle mystérieuse", "value": "puss" }
+        { "text": "Dans une cabane isolée", "profile": "shrek" },
+        { "text": "Dans un château", "profile": "fiona" },
+        { "text": "Dans une auberge animée", "profile": "donkey" },
+        { "text": "Dans une ruelle mystérieuse", "profile": "puss" }
       ]
     },
     {
-      "text": "Quel animal te représente le plus ?",
+      "question": "Quel animal te représente le plus ?",
       "answers": [
-        { "text": "L’âne", "value": "donkey" },
-        { "text": "L’ours", "value": "shrek" },
-        { "text": "Le chat", "value": "puss" },
-        { "text": "La biche", "value": "fiona" }
+        { "text": "L’âne", "profile": "donkey" },
+        { "text": "L’ours", "profile": "shrek" },
+        { "text": "Le chat", "profile": "puss" },
+        { "text": "La biche", "profile": "fiona" }
       ]
     },
     {
-      "text": "Ta plus grande force ?",
+      "question": "Ta plus grande force ?",
       "answers": [
-        { "text": "Faire rire les autres", "value": "donkey" },
-        { "text": "Être moi-même sans compromis", "value": "shrek" },
-        { "text": "Charmer et surprendre", "value": "puss" },
-        { "text": "Être là pour ceux que j’aime", "value": "fiona" }
+        { "text": "Faire rire les autres", "profile": "donkey" },
+        { "text": "Être moi-même sans compromis", "profile": "shrek" },
+        { "text": "Charmer et surprendre", "profile": "puss" },
+        { "text": "Être là pour ceux que j’aime", "profile": "fiona" }
       ]
     }
   ],

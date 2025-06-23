@@ -16,52 +16,10 @@
                     <h1 class="mb-5">CrazyQuizzJS</h1>
                     <button type="button" class="create-quizz btn btn-primary btn-lg">Creer un quizz</button>
                 </div>
-        <div id="quiz-container">
-            <div class="main-card">
-                <div class=" card" style="width: 18rem;">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXIAAACICAMAAADNhJDwAAAAA1BMVEWpqamhHEfZAAAASElEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA3A8UYAAEH59SKAAAAAElFTkSuQmCC" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <div class="col-xs-12 col-md-6 col-lg-3 d-flex justify-content-center">
-                            <div class="main-card">
-                                <div class=" card" style="width: 18rem;">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXIAAACICAMAAADNhJDwAAAAA1BMVEWpqamhHEfZAAAASElEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA3A8UYAAEH59SKAAAAAElFTkSuQmCC" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                        <a href="#" class="btn btn-primary">Repondre au quizz</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-lg-3 d-flex justify-content-center">
-                            <div class="main-card">
-                                <div class=" card" style="width: 18rem;">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXIAAACICAMAAADNhJDwAAAAA1BMVEWpqamhHEfZAAAASElEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA3A8UYAAEH59SKAAAAAElFTkSuQmCC" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                        <button class="btn btn-primary">Repondre au quizz</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-lg-3 d-flex justify-content-center">
-                            <div class="main-card">
-                                <div class=" card" style="width: 18rem;">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXIAAACICAMAAADNhJDwAAAAA1BMVEWpqamhHEfZAAAASElEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA3A8UYAAEH59SKAAAAAElFTkSuQmCC" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                        <a href="#" class="btn btn-primary">Repondre au quizz</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        
+        <div class="row gap-3 justify-content-center main-card">
         </div>
+        
     <div class="container game-view mb-5">
         <div class="row justify-content-center gap-4">
             <div class="col-12 align-items-center my-5 d-flex flex-column gap-3">
@@ -78,20 +36,29 @@
 
                 
                 <div class="answers col-xs-12 col-md-8 col-lg-6 d-flex gap-3 d-none" style="justify-content: space-between;">
-                    <button class="btn btn-primary d-flex w-100%">Lorem ipsum dolor sit amet.</button>
-                    <button class="btn btn-primary d-flex w-100%">Lorem ipsum dolor sit amet.</button>
+                    <button class="answer-btn btn btn-primary d-flex w-100%">Lorem ipsum dolor sit amet.</button>
+                    <button class="answer-btn btn btn-primary d-flex w-100%">Lorem ipsum dolor sit amet.</button>
                 </div>
                 <div class="answers col-xs-12 col-md-8 col-lg-6 d-flex gap-3 d-none" style="justify-content: space-between;">
-                    <button class="btn btn-primary d-flex w-100%">Lorem ipsum dolor sit amet.</button>
-                    <button class="btn btn-primary d-flex w-100%">Lorem ipsum dolor sit amet.</button>
-                </div>
-                
-                <div class=" d-flex flex-column align-items-center justify-content-center d-none">
-                    <button class="end btn btn-primary" >Arreter le quizz</button>
+                    <button class="answer-btn btn btn-primary d-flex w-100%">Lorem ipsum dolor sit amet.</button>
+                    <button class="answer-btn btn btn-primary d-flex w-100%">Lorem ipsum dolor sit amet.</button>
                 </div>
                 
             </div>
         </div>
+    </div>
+
+    <div class="container result-view mb-5 d-none">
+        <div class="row justify-content-center gap-4">
+            <div class="col-12 align-items-center my-5 d-flex flex-column gap-3">
+
+                <h2 class="result-title">Vous etes <span class="perso"></span> !</h2>
+                <p class="result-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                <button class="replay btn btn-primary">Rejouer</button>
+                
+            </div>
+        </div>
+
     </div>
     </body>
 </html>
