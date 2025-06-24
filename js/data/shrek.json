@@ -53,22 +53,22 @@
   "results": {
     "shrek": {
       "title": "Tu es Shrek",
-      "desc": "Tu es brut au premier abord, mais terriblement loyal et attachant. Tu ne fais confiance qu'à ceux qui le méritent.",
+      "description": "Tu es brut au premier abord, mais terriblement loyal et attachant. Tu ne fais confiance qu'à ceux qui le méritent.",
       "img": "https://example.com/images/shrek.png"
     },
     "fiona": {
       "title": "Tu es Fiona",
-      "desc": "Tu es douce, courageuse et pleine de ressources. Tu caches une force incroyable derrière ton apparente délicatesse.",
+      "description": "Tu es douce, courageuse et pleine de ressources. Tu caches une force incroyable derrière ton apparente délicatesse.",
       "img": "https://example.com/images/fiona.png"
     },
     "donkey": {
       "title": "Tu es Donkey",
-      "desc": "Tu es l’ami fidèle, joyeux, un peu envahissant mais toujours là pour les autres. Ton humour est ta plus grande arme.",
+      "description": "Tu es l’ami fidèle, joyeux, un peu envahissant mais toujours là pour les autres. Ton humour est ta plus grande arme.",
       "img": "https://example.com/images/donkey.png"
     },
     "puss": {
       "title": "Tu es Le Chat Potté",
-      "desc": "Tu es malin, élégant et tu as le chic pour charmer ton entourage. Derrière tes airs, tu es un vrai héros.",
+      "description": "Tu es malin, élégant et tu as le chic pour charmer ton entourage. Derrière tes airs, tu es un vrai héros.",
       "img": "https://example.com/images/puss.png"
     }
   }

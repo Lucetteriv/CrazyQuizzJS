@@ -1,11 +1,20 @@
 import { loadAllQuizzes } from "../QuizLoader.js";
 
 export function startQuizz() {
+    const stop = document.querySelector('.stop-button')
+    stop.classList.remove('d-none');
     document.querySelectorAll('.card').forEach(card => {
         card.classList.add('d-none');
     });
-    document.querySelector('.progress').classList.remove('d-none');
-    document.querySelector('.progress').classList.add('d-block');
+     const progressContainer = document.querySelector('.progress');
+    const progressBar = document.querySelector('.progress-bar');
+    if (progressContainer && progressBar) {
+        progressContainer.classList.remove('d-none');
+        progressBar.classList.remove('d-none');
+        progressBar.classList.add('d-flex');
+        progressBar.style.width = '0%';
+        progressBar.textContent = '0%';
+    }
     document.querySelector('.question').classList.remove('d-none');
     document.querySelector('.question').classList.add('d-flex');
 
@@ -28,4 +37,5 @@ export async function getQuizz(index) {
     const quizzes = await loadAllQuizzes();
     return quizzes[index];
 }
+
 

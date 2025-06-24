@@ -8,3 +8,20 @@ body{
 .card-img-top{
     max-height: 180px;
 }
+.progress {
+  width: 100%;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  height: 20px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  line-height: 20px; /* Alignement vertical du texte */
+  transition: width 0.3s ease;
+}

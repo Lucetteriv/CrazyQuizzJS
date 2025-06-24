@@ -100,6 +100,7 @@ export function showQuestions(quiz, currentQuestion) {
   answersContainer.forEach((answer, index) => {
     answer.textContent = questions[currentQuestion].answers[index].text || `Réponse ${index + 1} inconnue`;
     answer.setAttribute('id', questions[currentQuestion].answers[index].profile || `profile-${index + 1}`);
+    answer.setAttribute('description', questions[currentQuestion].answers[index].profile || `description-${index + 1}`);
   });
 }
 
@@ -107,6 +108,30 @@ export function nextQuestion(currentQuestion) {
   currentQuestion++;
   return currentQuestion;
 };
+
+export function replayQuiz() {
+  const container = document.querySelector('.container.result-view');
+  container.classList.remove('d-block');
+  container.classList.add('d-none');
+
+  const baseView = document.querySelector('.container.base-view');
+  baseView.classList.remove('d-none');
+
+  const card = document.querySelectorAll('.card');
+  card.forEach(c => {
+    c.classList.remove('d-none');
+  });
+  
+}
+
+export function updateProgressBar(currentQuestion, totalQuestions) {
+  const progressBar = document.querySelector('.progress-bar');
+  if (!progressBar) return;
+
+  const percentage = Math.round((currentQuestion / totalQuestions) * 100);
+  progressBar.style.width = `${percentage}%`;
+  progressBar.textContent = `${percentage}%`;
+}
 
 
 
