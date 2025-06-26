@@ -8,7 +8,8 @@ export async function loadAllQuizzes() {
         'shrek.json',
         'starwars.json',
         'harrypotter.json',
-        'marvel.json'
+        'marvel.json',
+        'jj.json'
         // Ajoute ici tous les autres fichiers .json que tu as dans js/data
     ];
 

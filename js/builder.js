@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const builsQuestions = document.querySelector('#build-questions');
+    const results = {};
     if (builsQuestions) {
         builsQuestions.addEventListener('click', () => {
 
@@ -15,9 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const quizTitle = document.querySelector('#title');
             const quizDescription = document.querySelector('#description');
+            const quizImage = document.querySelector('#image');
             const countQuestions = document.querySelector('#count');
-
-            const Allresults = document.querySelectorAll('#result');
             
             for (let i = 0; i < countQuestions.value; i++) {
                 
@@ -38,6 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 const answerContainer = document.createElement('div');
                 answerContainer.classList.add('answer-container', 'mt-2');
+
+                const blocks = document.querySelectorAll('.block');
                 
                 
                 for (let j = 0; j < 4; j++) {
@@ -54,9 +56,25 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                     const selectResult = document.createElement('select');
                     let options = '';
-                    Allresults.forEach((result, index) => {
-                        options += `<option value="${result.value}">${result.value}</option>`;
-                    });
+
+
+                    blocks.forEach((block, i) => {
+                    const resultInput = block.querySelector('#result');
+                    const titleInput = block.querySelector('#result-title');
+                    const descInput = block.querySelector('#result-description');
+
+                    const resultValue = resultInput.value || 'Résultat sans nom';
+
+                    options += `<option value="${resultInput.value}">${resultInput.value}</option>`;
+                    
+                    results[resultValue] = {
+                        title: titleInput.value || 'Aucun titre défini',
+                        description: descInput.value || 'Aucune description définie'
+                    };
+                });
+                
+                console.log(results);
+
                     selectResult.innerHTML = options;
                     selectResult.classList.add('form-select');
                     selectResult.setAttribute('id', `profile-${i}-${j}`);
@@ -77,14 +95,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const quizTitle = document.querySelector('#title').value;
             const quizDescription = document.querySelector('#description').value;
             const questions = [];
-            const results = [];
             const countQuestions = document.querySelector('#count').value;
             const questionContainers = document.querySelectorAll('.question-container');
-            const Allresults = document.querySelectorAll('#result');
-            Allresults.forEach((result) => {
-                result.value = result.value || "Aucun résultat défini";
-                results.push(result.value);
-            });
+            const quizImage = document.querySelector('#image').value;
+            
             questionContainers.forEach((container, index) => {
                 const questionText = container.querySelector(`#question-${index}`).value;
                 const answers = [];
@@ -102,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const newQuiz = {
                 title: quizTitle,
                 description: quizDescription,
+                image: quizImage,
                 count: countQuestions,
                 questions: questions,
                 results : results
